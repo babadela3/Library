@@ -1,0 +1,22 @@
+<div class="center">
+  <div>
+    <label class="title">More Than 100 Exceptional Works of Journalism</label>
+  </div>
+  <div>
+    <label class="subtitle">This fantastic nonfiction is still worth discovering and pondering today.</label>
+  </div>  
+  <div class="presentation" *ngFor="let u of articleList?.content">
+    <div class="article">
+      <label class="articleTitle">{{u.title}}</label>
+    </div>
+    <div class="article">
+      <label class="articleAuthor">by {{u.author.fullName}}</label>
+    </div>
+    <div class="article">
+      <label class="articleText">{{u.text}}</label>
+    </div>
+    <div class="article">
+      <button class="btn btn-danger btn-sm ml-2 mb-3">Read Article</button>
+    </div>
+  </div>
+</div>
